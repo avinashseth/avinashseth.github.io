@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Building Application with jQuery Mobile</title>
+    <!-- step 4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- step 4 -->
+    <!-- step 2 -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- step 2 -->
+</head>
+<body>
+    <!-- step 3 -->
+    <section id="firstpage" data-role="page">
+        <div data-role="header">
+            <h1>Forms</h1>
+        </div>
+        <div data-role="content">
+            <form action="" method="get">
+                <div data-role="fieldcontain">
+                    <label for="name">Fullname</label>
+                    <input type="text" name="name" id="name" value="" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address"></textarea>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="address">Search</label>
+                    <input type="search" name="search" id="search" />
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" id="male" value="male" /><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" /><label for="female">Female</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Technology</legend>
+                        <input type="checkbox" name="technology" id="ml" value="ml" /><label for="ml">Machine Learning</label>
+                        <input type="checkbox" name="technology" id="ai" value="ai" /><label for="ai">AI</label>
+                        <input type="checkbox" name="technology" id="bl" value="bl" /><label for="bl">Blockchain</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="range">Select Budget</label>
+                    <input type="range" name="range" id="range" value="50" min="0" max="100" step="5">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="favsuper">Favourite Avenger</label>
+                    <select name="favsuper" id="favsuper">
+                        <option value="iron">Iron Man</option>
+                        <option value="hawkeye">Hawkeye</option>
+                        <option value="cap">Captain America</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div data-role="footer">
+            <h2>For Mobile</h2>
+        </div>
+    </section>
+    <!-- step 3 -->
+</body>
+</html>
